@@ -3,5 +3,6 @@ import 'package:dartz/dartz.dart';
 
 abstract class IRegisterRepo {
   Future<Either<String, List<AccadamicYearModel>>> getAccdamicYear();
-  Future<Either<String, List<ClassListModel>>> getClassList();
+  Future<Either<String, List<ClassListModel>>> getClassList(
+      String accadamicYrID);
 }
