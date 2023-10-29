@@ -9,3 +9,4 @@ const kHeight10 = SizedBox(
 const kHeight25 = SizedBox(
   height: 25,
 );
+const kBlack = Colors.black;

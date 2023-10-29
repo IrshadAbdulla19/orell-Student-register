@@ -28,11 +28,11 @@ Map<String, dynamic> _$$AccadamicYearModelImplToJson(
 
 _$ClassListModelImpl _$$ClassListModelImplFromJson(Map<String, dynamic> json) =>
     _$ClassListModelImpl(
-      courseTreeId: json['courseTreeId'] as String,
+      courseTreeId: json['courseTreeId'] as int,
       courseType: json['courseType'] as String,
-      courseTypesId: json['courseTypesId'] as String,
+      courseTypesId: json['courseTypesId'] as int,
       course: json['course'] as String,
-      parentId: json['parentId'] as String,
+      parentId: json['parentId'] as int,
     );
 
 Map<String, dynamic> _$$ClassListModelImplToJson(

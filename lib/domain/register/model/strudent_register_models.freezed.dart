@@ -264,15 +264,15 @@ ClassListModel _$ClassListModelFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$ClassListModel {
   @JsonKey(name: "courseTreeId")
-  String get courseTreeId => throw _privateConstructorUsedError;
+  int get courseTreeId => throw _privateConstructorUsedError;
   @JsonKey(name: "courseType")
   String get courseType => throw _privateConstructorUsedError;
   @JsonKey(name: "courseTypesId")
-  String get courseTypesId => throw _privateConstructorUsedError;
+  int get courseTypesId => throw _privateConstructorUsedError;
   @JsonKey(name: "course")
   String get course => throw _privateConstructorUsedError;
   @JsonKey(name: "parentId")
-  String get parentId => throw _privateConstructorUsedError;
+  int get parentId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -287,11 +287,11 @@ abstract class $ClassListModelCopyWith<$Res> {
       _$ClassListModelCopyWithImpl<$Res, ClassListModel>;
   @useResult
   $Res call(
-      {@JsonKey(name: "courseTreeId") String courseTreeId,
+      {@JsonKey(name: "courseTreeId") int courseTreeId,
       @JsonKey(name: "courseType") String courseType,
-      @JsonKey(name: "courseTypesId") String courseTypesId,
+      @JsonKey(name: "courseTypesId") int courseTypesId,
       @JsonKey(name: "course") String course,
-      @JsonKey(name: "parentId") String parentId});
+      @JsonKey(name: "parentId") int parentId});
 }
 
 /// @nodoc
@@ -317,7 +317,7 @@ class _$ClassListModelCopyWithImpl<$Res, $Val extends ClassListModel>
       courseTreeId: null == courseTreeId
           ? _value.courseTreeId
           : courseTreeId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       courseType: null == courseType
           ? _value.courseType
           : courseType // ignore: cast_nullable_to_non_nullable
@@ -325,7 +325,7 @@ class _$ClassListModelCopyWithImpl<$Res, $Val extends ClassListModel>
       courseTypesId: null == courseTypesId
           ? _value.courseTypesId
           : courseTypesId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       course: null == course
           ? _value.course
           : course // ignore: cast_nullable_to_non_nullable
@@ -333,7 +333,7 @@ class _$ClassListModelCopyWithImpl<$Res, $Val extends ClassListModel>
       parentId: null == parentId
           ? _value.parentId
           : parentId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
     ) as $Val);
   }
 }
@@ -347,11 +347,11 @@ abstract class _$$ClassListModelImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {@JsonKey(name: "courseTreeId") String courseTreeId,
+      {@JsonKey(name: "courseTreeId") int courseTreeId,
       @JsonKey(name: "courseType") String courseType,
-      @JsonKey(name: "courseTypesId") String courseTypesId,
+      @JsonKey(name: "courseTypesId") int courseTypesId,
       @JsonKey(name: "course") String course,
-      @JsonKey(name: "parentId") String parentId});
+      @JsonKey(name: "parentId") int parentId});
 }
 
 /// @nodoc
@@ -375,7 +375,7 @@ class __$$ClassListModelImplCopyWithImpl<$Res>
       courseTreeId: null == courseTreeId
           ? _value.courseTreeId
           : courseTreeId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       courseType: null == courseType
           ? _value.courseType
           : courseType // ignore: cast_nullable_to_non_nullable
@@ -383,7 +383,7 @@ class __$$ClassListModelImplCopyWithImpl<$Res>
       courseTypesId: null == courseTypesId
           ? _value.courseTypesId
           : courseTypesId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       course: null == course
           ? _value.course
           : course // ignore: cast_nullable_to_non_nullable
@@ -391,7 +391,7 @@ class __$$ClassListModelImplCopyWithImpl<$Res>
       parentId: null == parentId
           ? _value.parentId
           : parentId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
     ));
   }
 }
@@ -411,19 +411,19 @@ class _$ClassListModelImpl implements _ClassListModel {
 
   @override
   @JsonKey(name: "courseTreeId")
-  final String courseTreeId;
+  final int courseTreeId;
   @override
   @JsonKey(name: "courseType")
   final String courseType;
   @override
   @JsonKey(name: "courseTypesId")
-  final String courseTypesId;
+  final int courseTypesId;
   @override
   @JsonKey(name: "course")
   final String course;
   @override
   @JsonKey(name: "parentId")
-  final String parentId;
+  final int parentId;
 
   @override
   String toString() {
@@ -468,11 +468,11 @@ class _$ClassListModelImpl implements _ClassListModel {
 
 abstract class _ClassListModel implements ClassListModel {
   const factory _ClassListModel(
-          {@JsonKey(name: "courseTreeId") required final String courseTreeId,
+          {@JsonKey(name: "courseTreeId") required final int courseTreeId,
           @JsonKey(name: "courseType") required final String courseType,
-          @JsonKey(name: "courseTypesId") required final String courseTypesId,
+          @JsonKey(name: "courseTypesId") required final int courseTypesId,
           @JsonKey(name: "course") required final String course,
-          @JsonKey(name: "parentId") required final String parentId}) =
+          @JsonKey(name: "parentId") required final int parentId}) =
       _$ClassListModelImpl;
 
   factory _ClassListModel.fromJson(Map<String, dynamic> json) =
@@ -480,19 +480,19 @@ abstract class _ClassListModel implements ClassListModel {
 
   @override
   @JsonKey(name: "courseTreeId")
-  String get courseTreeId;
+  int get courseTreeId;
   @override
   @JsonKey(name: "courseType")
   String get courseType;
   @override
   @JsonKey(name: "courseTypesId")
-  String get courseTypesId;
+  int get courseTypesId;
   @override
   @JsonKey(name: "course")
   String get course;
   @override
   @JsonKey(name: "parentId")
-  String get parentId;
+  int get parentId;
   @override
   @JsonKey(ignore: true)
   _$$ClassListModelImplCopyWith<_$ClassListModelImpl> get copyWith =>

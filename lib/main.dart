@@ -7,8 +7,9 @@ import 'package:student_register/domain/core/di/injuctable.dart';
 import 'presentestion/splash/splash_screen.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await configInjuction();
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
           create: (context) => getIt<RegisterBloc>(),
         )
       ],
-      child: MaterialApp(
+      child: const MaterialApp(
         home: SplashScreen(),
       ),
     );

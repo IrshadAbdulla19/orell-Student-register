@@ -21,6 +21,7 @@ mixin _$RegisterEvent {
     TResult Function() $default, {
     required TResult Function() getAccdamicYear,
     required TResult Function(String accdemicYrId) getClassList,
+    required TResult Function(StudentModel student) saveUser,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -28,6 +29,7 @@ mixin _$RegisterEvent {
     TResult? Function()? $default, {
     TResult? Function()? getAccdamicYear,
     TResult? Function(String accdemicYrId)? getClassList,
+    TResult? Function(StudentModel student)? saveUser,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -35,6 +37,7 @@ mixin _$RegisterEvent {
     TResult Function()? $default, {
     TResult Function()? getAccdamicYear,
     TResult Function(String accdemicYrId)? getClassList,
+    TResult Function(StudentModel student)? saveUser,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -43,6 +46,7 @@ mixin _$RegisterEvent {
     TResult Function(_RegisterEvent value) $default, {
     required TResult Function(_GetAccdamicYear value) getAccdamicYear,
     required TResult Function(_GetClassList value) getClassList,
+    required TResult Function(_SaveUser value) saveUser,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -50,6 +54,7 @@ mixin _$RegisterEvent {
     TResult? Function(_RegisterEvent value)? $default, {
     TResult? Function(_GetAccdamicYear value)? getAccdamicYear,
     TResult? Function(_GetClassList value)? getClassList,
+    TResult? Function(_SaveUser value)? saveUser,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -57,6 +62,7 @@ mixin _$RegisterEvent {
     TResult Function(_RegisterEvent value)? $default, {
     TResult Function(_GetAccdamicYear value)? getAccdamicYear,
     TResult Function(_GetClassList value)? getClassList,
+    TResult Function(_SaveUser value)? saveUser,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -121,6 +127,7 @@ class _$RegisterEventImpl implements _RegisterEvent {
     TResult Function() $default, {
     required TResult Function() getAccdamicYear,
     required TResult Function(String accdemicYrId) getClassList,
+    required TResult Function(StudentModel student) saveUser,
   }) {
     return $default();
   }
@@ -131,6 +138,7 @@ class _$RegisterEventImpl implements _RegisterEvent {
     TResult? Function()? $default, {
     TResult? Function()? getAccdamicYear,
     TResult? Function(String accdemicYrId)? getClassList,
+    TResult? Function(StudentModel student)? saveUser,
   }) {
     return $default?.call();
   }
@@ -141,6 +149,7 @@ class _$RegisterEventImpl implements _RegisterEvent {
     TResult Function()? $default, {
     TResult Function()? getAccdamicYear,
     TResult Function(String accdemicYrId)? getClassList,
+    TResult Function(StudentModel student)? saveUser,
     required TResult orElse(),
   }) {
     if ($default != null) {
@@ -155,6 +164,7 @@ class _$RegisterEventImpl implements _RegisterEvent {
     TResult Function(_RegisterEvent value) $default, {
     required TResult Function(_GetAccdamicYear value) getAccdamicYear,
     required TResult Function(_GetClassList value) getClassList,
+    required TResult Function(_SaveUser value) saveUser,
   }) {
     return $default(this);
   }
@@ -165,6 +175,7 @@ class _$RegisterEventImpl implements _RegisterEvent {
     TResult? Function(_RegisterEvent value)? $default, {
     TResult? Function(_GetAccdamicYear value)? getAccdamicYear,
     TResult? Function(_GetClassList value)? getClassList,
+    TResult? Function(_SaveUser value)? saveUser,
   }) {
     return $default?.call(this);
   }
@@ -175,6 +186,7 @@ class _$RegisterEventImpl implements _RegisterEvent {
     TResult Function(_RegisterEvent value)? $default, {
     TResult Function(_GetAccdamicYear value)? getAccdamicYear,
     TResult Function(_GetClassList value)? getClassList,
+    TResult Function(_SaveUser value)? saveUser,
     required TResult orElse(),
   }) {
     if ($default != null) {
@@ -229,6 +241,7 @@ class _$GetAccdamicYearImpl implements _GetAccdamicYear {
     TResult Function() $default, {
     required TResult Function() getAccdamicYear,
     required TResult Function(String accdemicYrId) getClassList,
+    required TResult Function(StudentModel student) saveUser,
   }) {
     return getAccdamicYear();
   }
@@ -239,6 +252,7 @@ class _$GetAccdamicYearImpl implements _GetAccdamicYear {
     TResult? Function()? $default, {
     TResult? Function()? getAccdamicYear,
     TResult? Function(String accdemicYrId)? getClassList,
+    TResult? Function(StudentModel student)? saveUser,
   }) {
     return getAccdamicYear?.call();
   }
@@ -249,6 +263,7 @@ class _$GetAccdamicYearImpl implements _GetAccdamicYear {
     TResult Function()? $default, {
     TResult Function()? getAccdamicYear,
     TResult Function(String accdemicYrId)? getClassList,
+    TResult Function(StudentModel student)? saveUser,
     required TResult orElse(),
   }) {
     if (getAccdamicYear != null) {
@@ -263,6 +278,7 @@ class _$GetAccdamicYearImpl implements _GetAccdamicYear {
     TResult Function(_RegisterEvent value) $default, {
     required TResult Function(_GetAccdamicYear value) getAccdamicYear,
     required TResult Function(_GetClassList value) getClassList,
+    required TResult Function(_SaveUser value) saveUser,
   }) {
     return getAccdamicYear(this);
   }
@@ -273,6 +289,7 @@ class _$GetAccdamicYearImpl implements _GetAccdamicYear {
     TResult? Function(_RegisterEvent value)? $default, {
     TResult? Function(_GetAccdamicYear value)? getAccdamicYear,
     TResult? Function(_GetClassList value)? getClassList,
+    TResult? Function(_SaveUser value)? saveUser,
   }) {
     return getAccdamicYear?.call(this);
   }
@@ -283,6 +300,7 @@ class _$GetAccdamicYearImpl implements _GetAccdamicYear {
     TResult Function(_RegisterEvent value)? $default, {
     TResult Function(_GetAccdamicYear value)? getAccdamicYear,
     TResult Function(_GetClassList value)? getClassList,
+    TResult Function(_SaveUser value)? saveUser,
     required TResult orElse(),
   }) {
     if (getAccdamicYear != null) {
@@ -364,6 +382,7 @@ class _$GetClassListImpl implements _GetClassList {
     TResult Function() $default, {
     required TResult Function() getAccdamicYear,
     required TResult Function(String accdemicYrId) getClassList,
+    required TResult Function(StudentModel student) saveUser,
   }) {
     return getClassList(accdemicYrId);
   }
@@ -374,6 +393,7 @@ class _$GetClassListImpl implements _GetClassList {
     TResult? Function()? $default, {
     TResult? Function()? getAccdamicYear,
     TResult? Function(String accdemicYrId)? getClassList,
+    TResult? Function(StudentModel student)? saveUser,
   }) {
     return getClassList?.call(accdemicYrId);
   }
@@ -384,6 +404,7 @@ class _$GetClassListImpl implements _GetClassList {
     TResult Function()? $default, {
     TResult Function()? getAccdamicYear,
     TResult Function(String accdemicYrId)? getClassList,
+    TResult Function(StudentModel student)? saveUser,
     required TResult orElse(),
   }) {
     if (getClassList != null) {
@@ -398,6 +419,7 @@ class _$GetClassListImpl implements _GetClassList {
     TResult Function(_RegisterEvent value) $default, {
     required TResult Function(_GetAccdamicYear value) getAccdamicYear,
     required TResult Function(_GetClassList value) getClassList,
+    required TResult Function(_SaveUser value) saveUser,
   }) {
     return getClassList(this);
   }
@@ -408,6 +430,7 @@ class _$GetClassListImpl implements _GetClassList {
     TResult? Function(_RegisterEvent value)? $default, {
     TResult? Function(_GetAccdamicYear value)? getAccdamicYear,
     TResult? Function(_GetClassList value)? getClassList,
+    TResult? Function(_SaveUser value)? saveUser,
   }) {
     return getClassList?.call(this);
   }
@@ -418,6 +441,7 @@ class _$GetClassListImpl implements _GetClassList {
     TResult Function(_RegisterEvent value)? $default, {
     TResult Function(_GetAccdamicYear value)? getAccdamicYear,
     TResult Function(_GetClassList value)? getClassList,
+    TResult Function(_SaveUser value)? saveUser,
     required TResult orElse(),
   }) {
     if (getClassList != null) {
@@ -437,6 +461,151 @@ abstract class _GetClassList implements RegisterEvent {
 }
 
 /// @nodoc
+abstract class _$$SaveUserImplCopyWith<$Res> {
+  factory _$$SaveUserImplCopyWith(
+          _$SaveUserImpl value, $Res Function(_$SaveUserImpl) then) =
+      __$$SaveUserImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({StudentModel student});
+}
+
+/// @nodoc
+class __$$SaveUserImplCopyWithImpl<$Res>
+    extends _$RegisterEventCopyWithImpl<$Res, _$SaveUserImpl>
+    implements _$$SaveUserImplCopyWith<$Res> {
+  __$$SaveUserImplCopyWithImpl(
+      _$SaveUserImpl _value, $Res Function(_$SaveUserImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? student = null,
+  }) {
+    return _then(_$SaveUserImpl(
+      null == student
+          ? _value.student
+          : student // ignore: cast_nullable_to_non_nullable
+              as StudentModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$SaveUserImpl implements _SaveUser {
+  _$SaveUserImpl(this.student);
+
+  @override
+  final StudentModel student;
+
+  @override
+  String toString() {
+    return 'RegisterEvent.saveUser(student: $student)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SaveUserImpl &&
+            (identical(other.student, student) || other.student == student));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, student);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$SaveUserImplCopyWith<_$SaveUserImpl> get copyWith =>
+      __$$SaveUserImplCopyWithImpl<_$SaveUserImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function() $default, {
+    required TResult Function() getAccdamicYear,
+    required TResult Function(String accdemicYrId) getClassList,
+    required TResult Function(StudentModel student) saveUser,
+  }) {
+    return saveUser(student);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function()? $default, {
+    TResult? Function()? getAccdamicYear,
+    TResult? Function(String accdemicYrId)? getClassList,
+    TResult? Function(StudentModel student)? saveUser,
+  }) {
+    return saveUser?.call(student);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function()? $default, {
+    TResult Function()? getAccdamicYear,
+    TResult Function(String accdemicYrId)? getClassList,
+    TResult Function(StudentModel student)? saveUser,
+    required TResult orElse(),
+  }) {
+    if (saveUser != null) {
+      return saveUser(student);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_RegisterEvent value) $default, {
+    required TResult Function(_GetAccdamicYear value) getAccdamicYear,
+    required TResult Function(_GetClassList value) getClassList,
+    required TResult Function(_SaveUser value) saveUser,
+  }) {
+    return saveUser(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_RegisterEvent value)? $default, {
+    TResult? Function(_GetAccdamicYear value)? getAccdamicYear,
+    TResult? Function(_GetClassList value)? getClassList,
+    TResult? Function(_SaveUser value)? saveUser,
+  }) {
+    return saveUser?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_RegisterEvent value)? $default, {
+    TResult Function(_GetAccdamicYear value)? getAccdamicYear,
+    TResult Function(_GetClassList value)? getClassList,
+    TResult Function(_SaveUser value)? saveUser,
+    required TResult orElse(),
+  }) {
+    if (saveUser != null) {
+      return saveUser(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _SaveUser implements RegisterEvent {
+  factory _SaveUser(final StudentModel student) = _$SaveUserImpl;
+
+  StudentModel get student;
+  @JsonKey(ignore: true)
+  _$$SaveUserImplCopyWith<_$SaveUserImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
 mixin _$RegisterState {
   bool get isAccademicFetchSuccess => throw _privateConstructorUsedError;
   bool get isClassListFetchSuccess => throw _privateConstructorUsedError;
@@ -444,6 +613,7 @@ mixin _$RegisterState {
       throw _privateConstructorUsedError;
   List<ClassListModel>? get classModelList =>
       throw _privateConstructorUsedError;
+  bool get userSave => throw _privateConstructorUsedError;
   String? get error => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
@@ -462,6 +632,7 @@ abstract class $RegisterStateCopyWith<$Res> {
       bool isClassListFetchSuccess,
       List<AccadamicYearModel>? accdamicYearList,
       List<ClassListModel>? classModelList,
+      bool userSave,
       String? error});
 }
 
@@ -482,6 +653,7 @@ class _$RegisterStateCopyWithImpl<$Res, $Val extends RegisterState>
     Object? isClassListFetchSuccess = null,
     Object? accdamicYearList = freezed,
     Object? classModelList = freezed,
+    Object? userSave = null,
     Object? error = freezed,
   }) {
     return _then(_value.copyWith(
@@ -501,6 +673,10 @@ class _$RegisterStateCopyWithImpl<$Res, $Val extends RegisterState>
           ? _value.classModelList
           : classModelList // ignore: cast_nullable_to_non_nullable
               as List<ClassListModel>?,
+      userSave: null == userSave
+          ? _value.userSave
+          : userSave // ignore: cast_nullable_to_non_nullable
+              as bool,
       error: freezed == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
@@ -522,6 +698,7 @@ abstract class _$$RegisterStateImplCopyWith<$Res>
       bool isClassListFetchSuccess,
       List<AccadamicYearModel>? accdamicYearList,
       List<ClassListModel>? classModelList,
+      bool userSave,
       String? error});
 }
 
@@ -540,6 +717,7 @@ class __$$RegisterStateImplCopyWithImpl<$Res>
     Object? isClassListFetchSuccess = null,
     Object? accdamicYearList = freezed,
     Object? classModelList = freezed,
+    Object? userSave = null,
     Object? error = freezed,
   }) {
     return _then(_$RegisterStateImpl(
@@ -559,6 +737,10 @@ class __$$RegisterStateImplCopyWithImpl<$Res>
           ? _value._classModelList
           : classModelList // ignore: cast_nullable_to_non_nullable
               as List<ClassListModel>?,
+      userSave: null == userSave
+          ? _value.userSave
+          : userSave // ignore: cast_nullable_to_non_nullable
+              as bool,
       error: freezed == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
@@ -575,6 +757,7 @@ class _$RegisterStateImpl implements _RegisterState {
       required this.isClassListFetchSuccess,
       final List<AccadamicYearModel>? accdamicYearList,
       final List<ClassListModel>? classModelList,
+      required this.userSave,
       this.error})
       : _accdamicYearList = accdamicYearList,
         _classModelList = classModelList;
@@ -605,11 +788,13 @@ class _$RegisterStateImpl implements _RegisterState {
   }
 
   @override
+  final bool userSave;
+  @override
   final String? error;
 
   @override
   String toString() {
-    return 'RegisterState(isAccademicFetchSuccess: $isAccademicFetchSuccess, isClassListFetchSuccess: $isClassListFetchSuccess, accdamicYearList: $accdamicYearList, classModelList: $classModelList, error: $error)';
+    return 'RegisterState(isAccademicFetchSuccess: $isAccademicFetchSuccess, isClassListFetchSuccess: $isClassListFetchSuccess, accdamicYearList: $accdamicYearList, classModelList: $classModelList, userSave: $userSave, error: $error)';
   }
 
   @override
@@ -627,6 +812,8 @@ class _$RegisterStateImpl implements _RegisterState {
                 .equals(other._accdamicYearList, _accdamicYearList) &&
             const DeepCollectionEquality()
                 .equals(other._classModelList, _classModelList) &&
+            (identical(other.userSave, userSave) ||
+                other.userSave == userSave) &&
             (identical(other.error, error) || other.error == error));
   }
 
@@ -637,6 +824,7 @@ class _$RegisterStateImpl implements _RegisterState {
       isClassListFetchSuccess,
       const DeepCollectionEquality().hash(_accdamicYearList),
       const DeepCollectionEquality().hash(_classModelList),
+      userSave,
       error);
 
   @JsonKey(ignore: true)
@@ -652,6 +840,7 @@ abstract class _RegisterState implements RegisterState {
       required final bool isClassListFetchSuccess,
       final List<AccadamicYearModel>? accdamicYearList,
       final List<ClassListModel>? classModelList,
+      required final bool userSave,
       final String? error}) = _$RegisterStateImpl;
 
   @override
@@ -662,6 +851,8 @@ abstract class _RegisterState implements RegisterState {
   List<AccadamicYearModel>? get accdamicYearList;
   @override
   List<ClassListModel>? get classModelList;
+  @override
+  bool get userSave;
   @override
   String? get error;
   @override

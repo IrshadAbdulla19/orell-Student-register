@@ -7,10 +7,13 @@ class RegisterState with _$RegisterState {
       required bool isClassListFetchSuccess,
       List<AccadamicYearModel>? accdamicYearList,
       List<ClassListModel>? classModelList,
+      required bool userSave,
       String? error}) = _RegisterState;
 
   factory RegisterState.inital() {
     return const RegisterState(
-        isAccademicFetchSuccess: false, isClassListFetchSuccess: false);
+        isAccademicFetchSuccess: false,
+        isClassListFetchSuccess: false,
+        userSave: false);
   }
 }

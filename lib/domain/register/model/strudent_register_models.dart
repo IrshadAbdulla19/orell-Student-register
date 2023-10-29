@@ -19,11 +19,11 @@ class AccadamicYearModel with _$AccadamicYearModel {
 @freezed
 class ClassListModel with _$ClassListModel {
   const factory ClassListModel({
-    @JsonKey(name: "courseTreeId") required String courseTreeId,
+    @JsonKey(name: "courseTreeId") required int courseTreeId,
     @JsonKey(name: "courseType") required String courseType,
-    @JsonKey(name: "courseTypesId") required String courseTypesId,
+    @JsonKey(name: "courseTypesId") required int courseTypesId,
     @JsonKey(name: "course") required String course,
-    @JsonKey(name: "parentId") required String parentId,
+    @JsonKey(name: "parentId") required int parentId,
   }) = _ClassListModel;
 
   factory ClassListModel.fromJson(Map<String, dynamic> json) =>
